@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>360° VR Scene</title>
+    <title>360° VR Environment (Working Test)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <style>
@@ -10,14 +10,12 @@
     </style>
   </head>
   <body>
-    <a-scene background="color: #000">
-      <!-- 360 environment image -->
-      <a-sky src="360.png" rotation="0 -90 0"></a-sky>
+    <a-scene>
+      <!-- TEST SKY (online) -->
+      <a-sky src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"></a-sky>
 
       <!-- Camera -->
-      <a-entity id="cameraRig">
-        <a-entity camera look-controls position="0 1.6 0"></a-entity>
-      </a-entity>
+      <a-entity camera look-controls position="0 1.6 0"></a-entity>
     </a-scene>
   </body>
 </html>
